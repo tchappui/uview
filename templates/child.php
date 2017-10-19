@@ -1,7 +1,7 @@
 <?php $extends('base'); ?>
 
 <?php $block('content'); ?>
-<h1><?php echo $title; ?></h1>
+<h1><?php echo $header; ?></h1>
 
 <form method="post" action="#">
     <p>
