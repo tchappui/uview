@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Rendering function that implements simple template inheritance.
+ *
+ * UView renders plain PHP templates with support for basic template inheritance
+ * "à la Twig". 
+ *
+ * @param string $_template Name of the template to render without the extention.
+ * @param array  $_data     Optional. Data to feed to the template.
+ * @param string $_dir      Optional. Root directory for the templates. Default: templates/.
+ *
+ * @return string Rendered text.
+ */
 function uview(string $_template, array $_data = [], string $_dir = 'templates/')
 {
 	extract($_data);
