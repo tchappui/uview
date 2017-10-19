@@ -7,6 +7,7 @@
         
     <body>
 		<?php $block('content'); ?>
+		<p>Welcome in our base template!</p>
 		<?php $endblock(); ?>
 	</body>
 </html>

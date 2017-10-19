@@ -46,5 +46,6 @@ function uview(string $_template, array $_data = [], string $_dir = 'templates/'
 	
 	$parent = $_data['__parent'];
 
-	return isset($parent) ? uview($parent, $_data) : $_content;
+	//If a parent exists, uview is called recursively
+	return isset($parent) ? uview($parent, $_data, $_dir) : $_content;
 }
